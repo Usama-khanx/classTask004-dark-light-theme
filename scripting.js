@@ -10,19 +10,24 @@
 // }
 
 // dusra method
-function dayNight(){
+
 var btn2 = document.getElementById("clickBtn");
+btn2.textContent="Day";
+function dayNight(){
+// var btn2 = document.getElementById("clickBtn");
 var bg = document.body;
 
 if(bg.className === 'day'){
     bg.className = 'night';
     btn2.textContent="Day";
+    btn2.className='day'
    
    
 }
 else{
     bg.className = 'day';
      btn2.textContent="Night";
+     btn2.className='night'
     
 }
 }
