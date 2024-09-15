@@ -11,15 +11,18 @@
 
 // dusra method
 function dayNight(){
-var btn2 = document.getElementById("btn");
+var btn2 = document.getElementById("clickBtn");
 var bg = document.body;
 
-if(bg.className === 'night'){
-    bg.className = 'day';
+if(bg.className === 'day'){
+    bg.className = 'night';
+    btn2.textContent="Day";
+   
    
 }
 else{
-    bg.className = 'night';
+    bg.className = 'day';
+     btn2.textContent="Night";
     
 }
 }
