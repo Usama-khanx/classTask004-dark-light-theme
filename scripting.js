@@ -10,8 +10,11 @@
 // }
 
 // dusra method
-function dayNight(){
 var btn2 = document.getElementById("clickBtn");
+btn2.className='night'
+btn2.textContent="NIGHT"
+function dayNight(){
+// var btn2 = document.getElementById("clickBtn");
 var bg = document.body;
 
 if(bg.className === 'day'){
